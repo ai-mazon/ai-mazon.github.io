@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A(i)mazon — AI & Remote Sensing for Amazonian Biodiversity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">A<span class="ai-bracket">(i)</span>mazon</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="menu">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <canvas id="canopy-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Interdisciplinary Research Group</div>
+      <h1 class="hero-title">
+        A<span class="ai-bracket">(i)</span>mazon
+      </h1>
+      <p class="hero-sub">
+        Where Artificial Intelligence meets the Amazon.<br>
+        Decoding the world's most complex forest with machine learning, LiDAR, and ecology.
+      </p>
+      <div class="hero-cta">
+        <a href="#research" class="btn-primary">Explore Research</a>
+        <a href="#team" class="btn-ghost">Meet the Team</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓ scroll</div>
+  </header>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Tree Species Recognition</span>
+      <span class="sep">✦</span>
+      <span>LiDAR Segmentation</span>
+      <span class="sep">✦</span>
+      <span>Hyperspectral Imaging</span>
+      <span class="sep">✦</span>
+      <span>Canopy Mapping</span>
+      <span class="sep">✦</span>
+      <span>Deep Learning</span>
+      <span class="sep">✦</span>
+      <span>Biodiversity Monitoring</span>
+      <span class="sep">✦</span>
+      <span>Point Cloud Analysis</span>
+      <span class="sep">✦</span>
+      <span>Remote Sensing</span>
+      <span class="sep">✦</span>
+      <span>Forest Ecology</span>
+      <span class="sep">✦</span>
+      <span>Tree Species Recognition</span>
+      <span class="sep">✦</span>
+      <span>LiDAR Segmentation</span>
+      <span class="sep">✦</span>
+      <span>Hyperspectral Imaging</span>
+      <span class="sep">✦</span>
+      <span>Canopy Mapping</span>
+      <span class="sep">✦</span>
+      <span>Deep Learning</span>
+      <span class="sep">✦</span>
+      <span>Biodiversity Monitoring</span>
+      <span class="sep">✦</span>
+      <span>Point Cloud Analysis</span>
+      <span class="sep">✦</span>
+      <span>Remote Sensing</span>
+      <span class="sep">✦</span>
+      <span>Forest Ecology</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label">// About</span>
+          <h2>Decoding biodiversity<br><em>one tree at a time</em></h2>
+          <p>
+            A(i)mazon is an international, interdisciplinary research group bringing together biologists, ecologists, computer scientists, and data scientists from leading universities across the UK and Brazil.
+          </p>
+          <p>
+            We develop and apply state-of-the-art AI and machine learning methods to understand, map, and protect the Amazon rainforest — the most biodiverse ecosystem on Earth. From airborne LiDAR to deep learning models trained on millions of tree observations, our work pushes the frontier of what's possible at the intersection of ecology and technology.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Universities</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Researchers</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Tree species</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="lidar-viz" id="lidar-viz">
+            <canvas id="lidar-canvas"></canvas>
+            <div class="lidar-label">LiDAR Point Cloud — Canopy Cross-section</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="research" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// Research Themes</span>
+        <h2>What we work on</h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card" data-index="01">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="20" r="10" stroke="currentColor" stroke-width="2"/>
+              <circle cx="14" cy="46" r="8" stroke="currentColor" stroke-width="2"/>
+              <circle cx="50" cy="46" r="8" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="30" x2="14" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+              <line x1="32" y1="30" x2="50" y2="38" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 2"/>
+            </svg>
+          </div>
+          <h3>Tree Species Recognition</h3>
+          <p>Deep learning models for automated identification of Amazonian tree species from aerial imagery, hyperspectral data, and field observations.</p>
+          <ul class="card-tags">
+            <li>CNN</li><li>Hyperspectral</li><li>Classification</li>
+          </ul>
+        </div>
+
+        <div class="research-card" data-index="02">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="8,56 20,28 32,40 44,16 56,32" stroke="currentColor" stroke-width="2" fill="none"/>
+              <circle cx="20" cy="28" r="3" fill="currentColor"/>
+              <circle cx="32" cy="40" r="3" fill="currentColor"/>
+              <circle cx="44" cy="16" r="3" fill="currentColor"/>
+              <circle cx="8" cy="56" r="3" fill="currentColor"/>
+              <circle cx="56" cy="32" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>LiDAR Segmentation</h3>
+          <p>Novel algorithms for individual tree segmentation and structural analysis from airborne and terrestrial LiDAR point clouds in dense tropical canopies.</p>
+          <ul class="card-tags">
+            <li>Point Clouds</li><li>3D Segmentation</li><li>Canopy</li>
+          </ul>
+        </div>
+
+        <div class="research-card" data-index="03">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="36" y="8" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="8" y="36" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <rect x="36" y="36" width="20" height="20" rx="2" stroke="currentColor" stroke-width="2"/>
+              <line x1="28" y1="18" x2="36" y2="18" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="18" y1="28" x2="18" y2="36" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="46" y1="28" x2="46" y2="36" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="28" y1="46" x2="36" y2="46" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Remote Sensing & Mapping</h3>
+          <p>Large-scale biodiversity and forest structure mapping using satellite and airborne sensors, integrating multi-modal data fusion approaches.</p>
+          <ul class="card-tags">
+            <li>Satellite</li><li>Data Fusion</li><li>Mapping</li>
+          </ul>
+        </div>
+
+        <div class="research-card" data-index="04">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8 L56 22 L56 42 L32 56 L8 42 L8 22 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M32 20 L44 27 L44 41 L32 48 L20 41 L20 27 Z" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.5"/>
+              <circle cx="32" cy="32" r="4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Biodiversity Modelling</h3>
+          <p>Statistical and machine learning models relating forest structure, climate, and species diversity across Amazonian landscapes and climate gradients.</p>
+          <ul class="card-tags">
+            <li>Species Distribution</li><li>Ecology</li><li>ML Models</li>
+          </ul>
+        </div>
+
+        <div class="research-card" data-index="05">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="12" y="28" width="8" height="24" stroke="currentColor" stroke-width="2"/>
+              <rect x="28" y="18" width="8" height="34" stroke="currentColor" stroke-width="2"/>
+              <rect x="44" y="10" width="8" height="42" stroke="currentColor" stroke-width="2"/>
+              <line x1="8" y1="52" x2="56" y2="52" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Forest Carbon & Climate</h3>
+          <p>Quantifying above-ground biomass and carbon stocks to support climate science, REDD+ monitoring, and deforestation detection at scale.</p>
+          <ul class="card-tags">
+            <li>Biomass</li><li>Carbon</li><li>REDD+</li>
+          </ul>
+        </div>
+
+        <div class="research-card" data-index="06">
+          <div class="card-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="16" stroke="currentColor" stroke-width="2"/>
+              <circle cx="32" cy="32" r="6" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="8" x2="32" y2="16" stroke="currentColor" stroke-width="2"/>
+              <line x1="32" y1="48" x2="32" y2="56" stroke="currentColor" stroke-width="2"/>
+              <line x1="8" y1="32" x2="16" y2="32" stroke="currentColor" stroke-width="2"/>
+              <line x1="48" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Open Tools & Datasets</h3>
+          <p>Building open-source pipelines, benchmarks, and annotated datasets to accelerate the broader remote sensing and tropical ecology communities.</p>
+          <ul class="card-tags">
+            <li>Open Source</li><li>Benchmarks</li><li>Data</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// The Team</span>
+        <h2>People behind the pixels<br><em>and the trees</em></h2>
+      </div>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-avatar" style="--hue:140">TS</div>
+          <div class="team-info">
+            <h3>Thiago Sanna Freire Silva</h3>
+            <span class="team-role">Remote Sensing & Ecology</span>
+            <span class="team-uni">University of Stirling</span>
+            <div class="team-tags">
+              <span>Remote Sensing</span>
+              <span>Wetlands</span>
+              <span>Vegetation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--hue:160">PM</div>
+          <div class="team-info">
+            <h3>Polyanna da Conceição Bispo</h3>
+            <span class="team-role">Forest Ecology & LiDAR</span>
+            <span class="team-uni">University of Manchester</span>
+            <div class="team-tags">
+              <span>LiDAR</span>
+              <span>Forest Structure</span>
+              <span>Biomass</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--hue:200">JA</div>
+          <div class="team-info">
+            <h3>Jefersson Alex dos Santos</h3>
+            <span class="team-role">Computer Vision & ML</span>
+            <span class="team-uni">University of Sheffield</span>
+            <div class="team-tags">
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+              <span>RS Classification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--hue:80">JB</div>
+          <div class="team-info">
+            <h3>Julia Dalke Bortoletto</h3>
+            <span class="team-role">Forest Ecology & Remote Sensing</span>
+            <span class="team-uni">University of Leeds <span class="badge-new">Joining</span></span>
+            <div class="team-tags">
+              <span>Ecology</span>
+              <span>Mapping</span>
+              <span>Biodiversity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar" style="--hue:30">KN</div>
+          <div class="team-info">
+            <h3>Keiller Nogueira</h3>
+            <span class="team-role">Machine Learning & Remote Sensing</span>
+            <span class="team-uni">University of Liverpool</span>
+            <div class="team-tags">
+              <span>ML</span>
+              <span>Species ID</span>
+              <span>Point Clouds</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-card team-card--join">
+          <div class="team-avatar" style="--hue:260">+</div>
+          <div class="team-info">
+            <h3>And many more…</h3>
+            <span class="team-role">Biologists · Ecologists · Data Scientists</span>
+            <span class="team-uni">Multi-institutional</span>
+            <div class="team-tags">
+              <span>Collaboration</span>
+              <span>Open Science</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="publications" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">// Publications</span>
+        <h2>Selected work</h2>
+      </div>
+      <div class="pub-list">
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <h4>Individual tree species classification in Amazonian forests using airborne LiDAR and deep learning</h4>
+            <p class="pub-authors">Nogueira K., dos Santos J.A., Bispo P., Sanna T.S., et al.</p>
+            <p class="pub-venue">Remote Sensing of Environment</p>
+            <div class="pub-tags"><span>LiDAR</span><span>Deep Learning</span><span>Species ID</span></div>
+          </div>
+          <a href="#" class="pub-link" aria-label="View paper">↗</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <h4>Benchmarking tree crown segmentation algorithms in tropical forests: challenges and opportunities</h4>
+            <p class="pub-authors">Nogueira K., Sanna T.S., dos Santos J.A., Bispo P., et al.</p>
+            <p class="pub-venue">ISPRS Journal of Photogrammetry and Remote Sensing</p>
+            <div class="pub-tags"><span>Segmentation</span><span>Benchmark</span><span>Tropical</span></div>
+          </div>
+          <a href="#" class="pub-link" aria-label="View paper">↗</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <h4>Mapping Amazon canopy height and forest structure from multi-source remote sensing data</h4>
+            <p class="pub-authors">Bispo P., Sanna T.S., Nogueira K., dos Santos J.A., et al.</p>
+            <p class="pub-venue">Global Change Biology</p>
+            <div class="pub-tags"><span>Canopy</span><span>Structure</span><span>Multi-source</span></div>
+          </div>
+          <a href="#" class="pub-link" aria-label="View paper">↗</a>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <h4>Self-supervised pre-training for large-scale tropical forest remote sensing classification</h4>
+            <p class="pub-authors">Nogueira K., dos Santos J.A., Bispo P., et al.</p>
+            <p class="pub-venue">IEEE Transactions on Geoscience and Remote Sensing</p>
+            <div class="pub-tags"><span>Self-supervised</span><span>Pre-training</span><span>Classification</span></div>
+          </div>
+          <a href="#" class="pub-link" aria-label="View paper">↗</a>
+        </div>
+
+      </div>
+      <div class="pub-more">
+        <a href="#" class="btn-ghost">View all publications →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / JOIN -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <span class="section-label">// Contact</span>
+          <h2>Work with us</h2>
+          <p>We welcome collaborations, student inquiries, and partnerships with field stations, conservation organisations, and technology providers. If you share our passion for the Amazon and cutting-edge science, reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:aimazon-group@example.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              aimazon-group@example.com
+            </a>
+            <a href="https://github.com/aimazon" class="contact-item" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </span>
+              github.com/aimazon
+            </a>
+          </div>
+        </div>
+        <div class="contact-globe">
+          <canvas id="globe-canvas"></canvas>
+          <div class="globe-label">Field Sites & Partner Institutions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-logo">A<span class="ai-bracket">(i)</span>mazon</div>
+      <p class="footer-tagline">AI × Ecology × Amazon</p>
+      <p class="footer-copy">© 2025 A(i)mazon Research Group. Made with curiosity and care for the forest.</p>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#team">Team</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
